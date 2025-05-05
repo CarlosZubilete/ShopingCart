@@ -5,8 +5,10 @@ import path from 'node:path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  alias:{
-    "@": path.resolve(__dirname, "./src"), // cada vez que pongamos el @ , se digirira al src
-    "@features": path.resolve(__dirname, "./src/feature/"),
-  }
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+      "@features": path.resolve(__dirname, "./src/feature"),
+    },
+  },
 })

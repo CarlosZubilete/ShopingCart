@@ -1,0 +1,6 @@
+.instrumentList {
+  /* border: 1px solid blue; */
+  display: flex;
+  /* flex-direction: row; */
+  margin: 1rem;
+}

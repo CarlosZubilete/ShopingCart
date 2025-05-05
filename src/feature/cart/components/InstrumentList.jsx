@@ -1,0 +1,14 @@
+import Insrument from "@features/cart/components/Instrument";
+import '@features/cart/styles/InstrumentList.css';
+
+function InsrumentList({document}){
+  return (<div className='instrumentList'>
+    <Insrument 
+      name={document.name} 
+      price={document.price} 
+      img={document.img}/>
+  </div>
+  )
+}
+
+export default InsrumentList; 
