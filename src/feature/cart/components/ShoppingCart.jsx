@@ -7,10 +7,11 @@ import '@features/cart/styles/ShoppingCart.css';
 function ShoppingCart({}){
 
   //const{text} = useContext(ShoppingCartContext)
-  const {text} = useShoppingCart();
+  //const {text} = useShoppingCart();
+  const {list} = useShoppingCart();
   return(
     <div className='shoppingCart'>
-      <h3 className='shoppingCart__texto'>Intrumento selecionado: {text}</h3>
+      <h3 className='shoppingCart__texto'>Seleccionados: {list.length}</h3>
       <button className='shoppingCart__buy'>Pagar</button>
     </div>
   )

@@ -9,7 +9,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
   z-index: 100;
-  width: 280px;
+  width: 250px;
   max-width: 90%;
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
   transition: all 0.3s ease, box-shadow 0.3s ease;
@@ -37,7 +37,7 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 100%;
+  width: 80%;
 }
 
 .shoppingCart__buy:hover {

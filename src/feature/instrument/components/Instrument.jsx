@@ -7,7 +7,7 @@ function Instrument({name, price,img}){
 
   //const {setText} = useContext(ShoppingCartContext);
   
-  const {setText} = useShoppingCart();
+  const {addDocumento} = useShoppingCart();
 
   return(<div className='instrument'>
     <p className='instrument__name'>{name}</p>
@@ -15,7 +15,7 @@ function Instrument({name, price,img}){
     <div className='instrument__buy'>
       <p className='instrument__buy__price'>${price}</p>
       <button className='instrument__buy__button' 
-      onClick={()=>setText(name)}>Agregar</button>
+      onClick={()=>addDocumento(name)}>Agregar</button>
     </div>
 
   </div>

@@ -3,10 +3,17 @@ import ShoppingCardContext from "./ShoppingCartContext";
 
 
 function ShoppingCartProvider ({children}){
-  const[text,setText] = useState('Texto Inicializado')  
-  
+  // 
+  const[text,setText] = useState('')  
+  // 
+  const[list,setList] = useState([]);
+
+  const addDocumento = (document) => {
+    setList([...list,document]);
+  }
+
   return(<>
-    <ShoppingCardContext.Provider value={{text,setText}}>
+    <ShoppingCardContext.Provider value={{list,addDocumento}}>
       {children}
     </ShoppingCardContext.Provider>
   
