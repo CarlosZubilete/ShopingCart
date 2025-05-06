@@ -1,7 +1,7 @@
 import '@features/instrument/styles/Instrument.css';
 //import { useContext } from 'react';
 //import ShoppingCartContext from '@features/cart/contexts/ShoppingCartContext';
-import { useShoppingCart } from '@features/cart/contexts';
+import { useShoppingCart } from '@features/cart';
 
 function Instrument({name, price,img}){
 
