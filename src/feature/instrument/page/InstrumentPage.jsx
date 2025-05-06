@@ -1,5 +1,5 @@
-import InsrumentList from "@features/cart/components/InstrumentList"; 
-import '@features/cart/styles/InstrumentPage.css';
+import InsrumentList from "@features/instrument/components/InstrumentList"; 
+import '@features/instrument/styles/InstrumentPage.css';
 
 function InstrumentPage({collection}){
   return <div className='instrumentPage'>

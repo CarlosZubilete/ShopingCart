@@ -1,5 +1,8 @@
 import './App.css'
-import InstrumentPage from '@features/cart/page/InstrumentPage.jsx'
+import InstrumentPage from '@features/instrument/page/InstrumentPage.jsx'
+import ShoppingCart from '@features/cart/components/ShoppingCart'
+// 
+import ShoppingCartProvider from '@features/cart/contexts/ShoppingCartProvider'
 
 const INSTRUMENTOS = [
     {
@@ -92,9 +95,10 @@ const INSTRUMENTOS = [
 
 function App() {
   return (
-    <>
+    <ShoppingCartProvider>
+      <ShoppingCart />
       <InstrumentPage collection = {INSTRUMENTOS} />
-    </>
+    </ShoppingCartProvider>
   )
 }
 

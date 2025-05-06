@@ -1,12 +1,18 @@
-import '@features/cart/styles/Instrument.css';
+import '@features/instrument/styles/Instrument.css';
+import { useContext } from 'react';
+import ShoppingCartContext from '@features/cart/contexts/ShoppingCartContext';
 
 function Instrument({name, price,img}){
+
+  const {setText} = useContext(ShoppingCartContext);
+
   return(<div className='instrument'>
     <p className='instrument__name'>{name}</p>
     <img src={img} alt={`imagen de ${name}`} className='instrument__img'/>
     <div className='instrument__buy'>
       <p className='instrument__buy__price'>${price}</p>
-      <button className='instrument__buy__button'>Comprar</button>
+      <button className='instrument__buy__button' 
+      onClick={()=>setText(name)}>Agregar</button>
     </div>
 
   </div>

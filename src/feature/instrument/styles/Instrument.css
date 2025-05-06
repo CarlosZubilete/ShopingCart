@@ -25,7 +25,7 @@
 }
 
 .instrument__img {
-  width: 100%;
+  width: 75%;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
