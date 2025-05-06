@@ -14,3 +14,5 @@ function ShoppingCartProvider ({children}){
 }
 
 export default ShoppingCartProvider;
+
+export{ShoppingCartProvider}

@@ -1,10 +1,13 @@
 import '@features/instrument/styles/Instrument.css';
-import { useContext } from 'react';
-import ShoppingCartContext from '@features/cart/contexts/ShoppingCartContext';
+//import { useContext } from 'react';
+//import ShoppingCartContext from '@features/cart/contexts/ShoppingCartContext';
+import { useShoppingCart } from '@features/cart/contexts';
 
 function Instrument({name, price,img}){
 
-  const {setText} = useContext(ShoppingCartContext);
+  //const {setText} = useContext(ShoppingCartContext);
+  
+  const {setText} = useShoppingCart();
 
   return(<div className='instrument'>
     <p className='instrument__name'>{name}</p>
